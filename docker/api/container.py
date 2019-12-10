@@ -935,7 +935,7 @@ class ContainerApiMixin(object):
             container (str): The container where the file(s) will be extracted
             path (str): Path inside the container where the file(s) will be
                 extracted. Must exist.
-            data (bytes): tar data to be extracted
+            data (bytes or stream): tar data to be extracted
 
         Returns:
             (bool): True if the call succeeds.
